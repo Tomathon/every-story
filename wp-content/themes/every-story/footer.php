@@ -20,7 +20,7 @@
 <?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
 	</div><!-- Close off-canvas content -->
 <?php endif; ?>
-
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
 <?php wp_footer(); ?>
 </body>
 </html>
