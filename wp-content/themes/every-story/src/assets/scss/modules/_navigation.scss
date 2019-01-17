@@ -53,31 +53,33 @@
 // Tablet and desktop menu
 
 .top-bar {
+  background-color: $white;
+  justify-content: center;
+  border-top: 2px solid $dark-gray;
 
-  .top-bar-title a {
-    font-size: 1rem;
-    color: #B9B9B9;
-    padding-left: 1rem;
-    line-height: 1.8;
+  .top-bar-right {
+    flex: 0 1 100%;
+    margin-left: 0;
   }
 
-  .menu a {
-    color: #e6e6e6;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
-    line-height: 1;
+  .menu {
+    background-color: $white;
+    justify-content: space-between;
 
-    &:hover:not(.button) {
-      background-color: #42525D;
+    a {
+      color: $body-font-color;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-weight: bold;
+      font-size: 0.8rem;
+      line-height: 1;
+      text-transform: uppercase;
     }
   }
 
   .menu .active > a { background-color: #ccc; }
 
   .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
 
   .dropdown.menu .submenu { border: 0; }
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
