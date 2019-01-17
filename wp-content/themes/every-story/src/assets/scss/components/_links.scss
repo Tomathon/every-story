@@ -6,3 +6,14 @@
 [data-whatinput="touch"] a:focus, button:focus {
   outline: none;
 }
+
+// Global link styles.
+a {
+  color: $body-font-color;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $body-font-color;
+  }
+}
